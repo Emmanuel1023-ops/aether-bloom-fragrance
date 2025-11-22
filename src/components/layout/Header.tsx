@@ -1,5 +1,6 @@
 import { ShoppingBag, Search, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -8,25 +9,25 @@ const Header = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="/" className="flex items-center space-x-2">
+            <Link to="/" className="flex items-center space-x-2">
               <span className="text-2xl font-serif font-bold text-primary">Aether & Bloom</span>
-            </a>
+            </Link>
           </div>
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#collections" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
+            <Link to="/collections" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
               Collections
-            </a>
-            <a href="#scents" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
+            </Link>
+            <Link to="/scents" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
               Scents
-            </a>
-            <a href="#about" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
+            </Link>
+            <Link to="/about" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
               Our Story
-            </a>
-            <a href="#contact" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
+            </Link>
+            <Link to="/contact" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
               Contact
-            </a>
+            </Link>
           </nav>
 
           {/* Actions */}
