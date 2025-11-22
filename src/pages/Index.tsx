@@ -3,6 +3,7 @@ import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
 import Collections from "@/components/sections/Collections";
 import FeaturedProducts from "@/components/sections/FeaturedProducts";
+import Testimonials from "@/components/sections/Testimonials";
 import CallToAction from "@/components/sections/CallToAction";
 
 const Index = () => {
@@ -13,6 +14,7 @@ const Index = () => {
         <Hero />
         <Collections />
         <FeaturedProducts />
+        <Testimonials />
         <CallToAction />
       </main>
       <Footer />
